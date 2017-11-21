@@ -1,8 +1,8 @@
-import Markdown from '../../../libs/Markdown';
+import Markdown from '../../lib/Markdown';
 
 export default class Button extends Markdown{
 
-    md(){
+    readDoc(){
         return require('../../../docs/button.md');
     }
 }
