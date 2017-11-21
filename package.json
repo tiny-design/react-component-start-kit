@@ -1,12 +1,14 @@
 {
-  "name": "react component start kit",
+  "name": "react-component-start-kit",
   "version": "0.0.1",
   "description": "start kit for building react component and publishing to NPM",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --inline --config site/webpack.config.dev.js --open",
     "build": "babel src/components -d lib",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "css": "gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run build && npm run css"
   },
   "repository": {
     "type": "git",
@@ -27,9 +29,14 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.5",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-minify-css": "^1.2.4",
     "marked": "^0.3.6",
     "node-sass": "^4.7.1",
     "postcss-loader": "^2.0.8",
+    "prismjs": "^1.8.4",
     "raw-loader": "^0.5.1",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
