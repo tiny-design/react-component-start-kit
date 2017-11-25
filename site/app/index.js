@@ -5,6 +5,7 @@ import App from './App';
 import './index.css';
 import '../../lib/index.min.css';
 import '../public/libs/css/prism.css'
+import Prism from 'prismjs';
 
 const render = Component => {
     ReactDOM.render(

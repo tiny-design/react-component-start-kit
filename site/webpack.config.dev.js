@@ -3,7 +3,6 @@ const webpack = require('webpack');
 
 module.exports = {
     devtool: 'eval-source-map',
-
     entry: [
         'react-hot-loader/patch',
         path.resolve(__dirname, 'app/index.js'),
@@ -13,12 +12,14 @@ module.exports = {
         path: path.resolve(__dirname, 'public'),
         filename: "bundle.js"
     },
-
     devServer: {
         contentBase: path.resolve(__dirname, 'public'),
         historyApiFallback: true,
         inline: true,
         hot: true
+    },
+    resolve: {
+        extensions: ['.js', '.jsx']
     },
     module: {
         rules: [

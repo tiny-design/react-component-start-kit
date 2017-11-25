@@ -9,8 +9,6 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Button type="primary" onClick={()=>{alert('hha')}}>Click</Button>
-                <Alert>This is a alert</Alert>
                 <ButtonPage/>
 
             </div>

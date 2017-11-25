@@ -1,4 +1,4 @@
-import Markdown from '../../lib/Markdown';
+import Markdown from '../../libs/Markdown';
 
 export default class Button extends Markdown{
 

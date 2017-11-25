@@ -2,17 +2,24 @@
 
 This is a marked
 
+::: 
 ```js
-import React, {Component} from 'react';
-
-class App extends Component {
     render() {
         return (
-            <div dangerouslySetInnerHTML={{__html: marked(button)}} />
+            <Button
+                isRound={true}
+                style={{backgroundColor: '#ff0000'}}
+                onClick={() => {
+                }}
+                className="my-button"
+                type="primary"
+                disabled={false}>
+                <span>I'm a Button</span>
+            </Button>
         );
     }
-}
 ```
+:::
 
 This element `div` is a wrapper.
 
