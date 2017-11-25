@@ -4,6 +4,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
+
 const Babel = require('@babel/standalone');
 import {Button} from '../../../lib';
 import Editor from './Editor';
@@ -15,10 +16,15 @@ export default class Previewer extends Component {
         this._renderSource = this._renderSource.bind(this);
         this.playerId = `${parseInt(Math.random() * 1e9).toString(36)}`;
         this.editDoc = this.props.doc;
+        //edit display state
+        this.state = {
+            toggleEditorState: true
+        };
     }
 
     componentDidMount() {
         this._renderSource(this.props.doc);
+        this.setState({toggleEditorState: false});
     }
 
     _renderSource(doc) {
@@ -43,7 +49,8 @@ export default class Previewer extends Component {
         return (
             <div className="tiny-previewer-container">
                 <div className="canvas" id={this.playerId}/>
-                <div onClick={this._togglePreviewerOnClick.bind(this)}>
+                <div className="toggle-button" onClick={this._togglePreviewerOnClick.bind(this)}>Toggle Code Editor</div>
+                <div style={{display: this.state.toggleEditorState? 'block': 'none'}}>
                     <Editor
                         value={this.editDoc}
                         onChange={code => this._renderSource(code)}
@@ -53,8 +60,8 @@ export default class Previewer extends Component {
         );
     }
 
-    _togglePreviewerOnClick(){
-
+    _togglePreviewerOnClick() {
+        this.setState({toggleEditorState: !this.state.toggleEditorState});
     }
 }
 

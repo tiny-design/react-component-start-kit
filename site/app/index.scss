@@ -48,6 +48,8 @@ table{
   .CodeMirror{
     background: #F6F8FA;
     min-height: 200px;
+    padding-top: 15px;
+    height: auto;
   }
   *{
     font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
@@ -79,5 +81,13 @@ table{
   border-radius: 4px;
   .canvas{
     padding: 15px 30px;
+  }
+  .toggle-button{
+    cursor: pointer;
+    padding: 10px 20px;
+    border-top: solid 1px #eaeefb;
+    color: #469cfc;
+    font-size: 13px;
+    text-align: center;
   }
 }

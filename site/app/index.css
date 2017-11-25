@@ -38,7 +38,9 @@ table {
 
 .tiny-editor .CodeMirror {
   background: #F6F8FA;
-  min-height: 200px; }
+  min-height: 200px;
+  padding-top: 15px;
+  height: auto; }
 .tiny-editor * {
   font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
   line-height: 1.5;
@@ -61,5 +63,12 @@ table {
   border-radius: 4px; }
   .tiny-previewer-container .canvas {
     padding: 15px 30px; }
+  .tiny-previewer-container .toggle-button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-top: solid 1px #eaeefb;
+    color: #469cfc;
+    font-size: 13px;
+    text-align: center; }
 
 /*# sourceMappingURL=index.css.map */
