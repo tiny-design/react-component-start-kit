@@ -4,10 +4,10 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
+import Editor from './Editor';
 
 const Babel = require('@babel/standalone');
-import {Button} from '../../../lib';
-import Editor from './Editor';
+const Elements = require('../../../lib');
 
 export default class Previewer extends Component {
 
@@ -28,8 +28,14 @@ export default class Previewer extends Component {
     }
 
     _renderSource(doc) {
-        const args = ['React', 'ReactDOM', 'Button'];
-        const argv = [React, ReactDOM, Button];
+        const args = ['React', 'ReactDOM'];
+        const argv = [React, ReactDOM];
+
+        //push all element into the environment
+        for (const key in Elements) {
+            args.push(key)
+            argv.push(Elements[key])
+        }
 
         const jsCode = Babel.transform(`class Demo extends React.Component{
             ${doc}

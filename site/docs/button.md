@@ -9,11 +9,11 @@ This is a marked
             <div>
                 <Button
                     type="primary">
-                    <span>I'm a Button</span>
+                    I'm a Button
                 </Button>
                 <Button
                     type="success">
-                    <span>I'm a Button</span>
+                    I'm a Button
                 </Button>
             </div>
         );
