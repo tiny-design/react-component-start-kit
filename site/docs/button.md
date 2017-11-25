@@ -6,12 +6,16 @@ This is a marked
 ```js
     render() {
         return (
-            <Button
-                onClick={() => {
-                }}
-                type="primary">
-                <span>I'm a Button</span>
-            </Button>
+            <div>
+                <Button
+                    type="primary">
+                    <span>I'm a Button</span>
+                </Button>
+                <Button
+                    type="success">
+                    <span>I'm a Button</span>
+                </Button>
+            </div>
         );
     }
 ```
