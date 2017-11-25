@@ -43,3 +43,41 @@ table{
     }
   }
 }
+
+.tiny-editor{
+  .CodeMirror{
+    background: #F6F8FA;
+    min-height: 200px;
+  }
+  *{
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+    line-height: 1.5;
+    font-size: 13px;
+  }
+  span{
+    color: #999;
+  }
+  .cm-s-default .cm-tag {
+    color: #07a;
+  }
+  .cm-bracket{
+    color: #a67f59;
+  }
+  .cm-s-default .cm-string {
+    color: #690;
+  }
+  .cm-s-default .cm-attribute {
+    color: #222;
+  }
+  .cm-variable{
+    color: #DD4A68;
+  }
+}
+
+.tiny-previewer-container{
+  border: solid 1px #eaeefb;
+  border-radius: 4px;
+  .canvas{
+    padding: 15px 30px;
+  }
+}

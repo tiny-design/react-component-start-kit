@@ -36,4 +36,30 @@ table {
     table td:last-child {
       max-width: 200px; }
 
+.tiny-editor .CodeMirror {
+  background: #F6F8FA;
+  min-height: 200px; }
+.tiny-editor * {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+  line-height: 1.5;
+  font-size: 13px; }
+.tiny-editor span {
+  color: #999; }
+.tiny-editor .cm-s-default .cm-tag {
+  color: #07a; }
+.tiny-editor .cm-bracket {
+  color: #a67f59; }
+.tiny-editor .cm-s-default .cm-string {
+  color: #690; }
+.tiny-editor .cm-s-default .cm-attribute {
+  color: #222; }
+.tiny-editor .cm-variable {
+  color: #DD4A68; }
+
+.tiny-previewer-container {
+  border: solid 1px #eaeefb;
+  border-radius: 4px; }
+  .tiny-previewer-container .canvas {
+    padding: 15px 30px; }
+
 /*# sourceMappingURL=index.css.map */

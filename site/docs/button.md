@@ -7,13 +7,9 @@ This is a marked
     render() {
         return (
             <Button
-                isRound={true}
-                style={{backgroundColor: '#ff0000'}}
                 onClick={() => {
                 }}
-                className="my-button"
-                type="primary"
-                disabled={false}>
+                type="primary">
                 <span>I'm a Button</span>
             </Button>
         );

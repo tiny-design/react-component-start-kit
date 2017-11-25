@@ -35,7 +35,7 @@ export default class Markdown extends Component {
         return (
             `<div class="example-container">
                 <div id="${index}"></div>
-                <details>
+                <details style="display: none">
                     <summary>Toggle Code Snippets</summary>
                     <div class="code-container">`
         );
