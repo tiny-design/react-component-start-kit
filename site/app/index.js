@@ -4,8 +4,8 @@ import {AppContainer} from 'react-hot-loader';
 import App from './App';
 import './index.css';
 import '../../lib/index.min.css';
-import '../public/libs/css/prism.css'
-import Prism from 'prismjs';
+// import 'prismjs';
+// import 'prismjs/themes/prism.css';
 
 const render = Component => {
     ReactDOM.render(

@@ -36,6 +36,16 @@ table {
     table td:last-child {
       max-width: 200px; }
 
+main pre {
+  background-color: #F6F8FA;
+  padding: 1.2em;
+  margin: .5em 0; }
+  main pre code {
+    font-size: 13px;
+    color: black;
+    text-shadow: 0 1px white;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace; }
+
 .tiny-editor .CodeMirror {
   background: #F6F8FA;
   min-height: 200px;
