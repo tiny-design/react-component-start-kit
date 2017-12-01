@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: [
@@ -22,7 +23,10 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader', 'postcss-loader']
+                use: ExtractTextPlugin.extract({
+                    fallback: "style-loader",
+                    use: ['css-loader', 'postcss-loader']
+                })
             },
             {
                 test: /\.scss$/,
@@ -48,6 +52,7 @@ module.exports = {
         new webpack.optimize.UglifyJsPlugin(),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'public/index.html')
-        })
+        }),
+        new ExtractTextPlugin("style.bundle.css")
     ]
 };
