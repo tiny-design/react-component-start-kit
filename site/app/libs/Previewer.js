@@ -24,7 +24,7 @@ export default class Previewer extends Component {
 
     componentDidMount() {
         this._renderSource(this.props.doc);
-        this.setState({toggleEditorState: false});
+        // this.setState({toggleEditorState: false});
     }
 
     _renderSource(doc) {

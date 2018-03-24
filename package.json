@@ -1,7 +1,7 @@
 {
-  "name": "react-component-start-kit",
+  "name": "Tiny-Design Component Set",
   "version": "0.0.1",
-  "description": "start kit for building react component and publishing to NPM",
+  "description": "The React component set of Tiny-Design",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --inline --config site/webpack.config.dev.js --open",
@@ -16,7 +16,7 @@
     "type": "git",
     "url": "https://github.com/wangdicoder/react-component-start-kit.git"
   },
-  "author": "Di Wang",
+  "author": "Hastings Yeung",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/wangdicoder/react-component-start-kit/issues"
@@ -27,10 +27,15 @@
     "autoprefixer": "^7.1.6",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
+    "babel-eslint": "7.2.3",
     "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-react-app": "^3.0.2",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-runtime": "6.23.0",
     "codemirror": "^5.32.0",
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.2",
@@ -58,6 +63,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "prop-types": "^15.6.0"
+    "prop-types": "^15.6.0",
+    "animejs": "^2.2.0"
   }
 }
