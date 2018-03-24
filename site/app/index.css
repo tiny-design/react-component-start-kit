@@ -1,12 +1,22 @@
-html, body {
+body {
+  height: 100%;
   margin: 0;
-  padding: 15px; }
-
-* {
-  box-sizing: border-box; }
-
-h1, h2, h3, h4, h5, h6, p, div, a, button, input {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+#root {
+  position: relative;
+  height: 100%; }
+
+.demo {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  overflow: hidden; }
+
+main {
+  padding: 0 2rem;
+  width: 100%;
+  overflow-y: scroll; }
 
 table {
   max-width: 100%;

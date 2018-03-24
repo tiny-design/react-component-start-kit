@@ -2,15 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {AppContainer} from 'react-hot-loader';
 import App from './App';
+import {HashRouter} from 'react-router-dom';
 import './index.css';
 import '../../lib/index.min.css';
-// import 'prismjs';
-// import 'prismjs/themes/prism.css';
 
 const render = Component => {
     ReactDOM.render(
         <AppContainer>
-            <Component/>
+            <HashRouter>
+                <Component/>
+            </HashRouter>
         </AppContainer>,
         document.getElementById('root'),
     )

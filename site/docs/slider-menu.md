@@ -23,11 +23,11 @@ Define a menu with slider effect.
 
 #### API
 
-| Option | Description |
-| ------------- | ----------- |
-| className | Component className. |
-| style | Component style. |
-| displayLength | The length of tabs to display in the menu. |
+| Props | Description | Default Value |
+| ------------- | ----------- | ----------- |
+| className | Component className. | null |
+| style | Component style. | null |
+| displayLength | The number of tabs to display in the menu. | 3 |
 
 ### MenuItem
 
@@ -35,8 +35,11 @@ Define a menu tab, embeddable to any Menu components.
 
 #### API
 
-| Option | Description |
-| ------------- | ----------- |
-| className | Component className. |
-| style | Component style. |
-| onClick | The onClick event trigger. |
+| Props | Description | Default Value |
+| ------------- | ----------- | ----------- |
+| className | Component className. | null |
+| style | Component style. | null |
+| onClick | The onClick event trigger. | null |
+
+
+&nbsp;
