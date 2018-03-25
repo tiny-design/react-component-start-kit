@@ -1,6 +1,3 @@
-/**
- * Created by wangdi on 6/11/17.
- */
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
 import {routers} from './router';

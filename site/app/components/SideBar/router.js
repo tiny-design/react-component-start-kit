@@ -11,4 +11,8 @@ export const routers = [
         route: 'search-bar',
         name: 'SearchBar'
     },
+    {
+        route: 'notification',
+        name: 'Notification'
+    },
 ];

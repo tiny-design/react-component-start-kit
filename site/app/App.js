@@ -4,11 +4,13 @@ import SideBar from './components/SideBar';
 import ListPage from './components/list';
 import SearchBarPage from './components/search-bar';
 import SliderMenuPage from './components/slider-menu';
+import NotificationPage from './components/notification';
 import {SliderMenu} from '../../lib/SliderMenu';
 import {MenuItem} from '../../lib/MenuItem';
 import {List, ListItem} from '../../lib/List';
 import {SearchBar} from '../../lib/SearchBar';
-import {Debounce} from "../../lib/Utils";
+import {Debounce} from '../../lib/Utils';
+import {Notification} from '../../lib/Notification';
 
 class App extends Component {
 
@@ -26,6 +28,8 @@ class App extends Component {
                                component={ListPage}/>
                         <Route path="/components/search-bar"
                                component={SearchBarPage}/>
+                        <Route path="/components/notification"
+                               component={NotificationPage}/>
                     </Switch>
                 </main>
             </div>

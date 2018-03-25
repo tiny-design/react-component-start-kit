@@ -90,6 +90,12 @@
   }
 }
 
+@media screen and (max-width:300px){
+  .side-bar {
+    font-size: 0.7rem;
+  }
+}
+
 @keyframes collapse {
   0% {
     width: 20rem;
