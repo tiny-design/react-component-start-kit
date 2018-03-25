@@ -4,7 +4,8 @@ Define search input textbox.
 
 :::
 ```js
-    constructor() {
+    constructor(props) {
+       super(props);
        this.state = {
             suggestions: []
        };
