@@ -5,12 +5,7 @@ import ListPage from './components/list';
 import SearchBarPage from './components/search-bar';
 import SliderMenuPage from './components/slider-menu';
 import NotificationPage from './components/notification';
-import {SliderMenu} from '../../lib/SliderMenu';
-import {MenuItem} from '../../lib/MenuItem';
-import {List, ListItem} from '../../lib/List';
-import {SearchBar} from '../../lib/SearchBar';
-import {Debounce} from '../../lib/Utils';
-import {Notification} from '../../lib/Notification';
+import TestPage from './containers/test';
 
 class App extends Component {
 
@@ -30,6 +25,8 @@ class App extends Component {
                                component={SearchBarPage}/>
                         <Route path="/components/notification"
                                component={NotificationPage}/>
+                        <Route path="/containers/test"
+                               component={TestPage}/>
                     </Switch>
                 </main>
             </div>

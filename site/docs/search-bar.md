@@ -33,7 +33,7 @@ Define search input textbox.
               <li>Suggestion for {evt.target.value}...</li>,
               <li>Suggestion for {evt.target.value}...</li>,
               <li>Suggestion for {evt.target.value}...</li>]:[];
-        this.renderSuggestions(this, suggestions);
+        this.renderSuggestions()(this, suggestions);
     }
 
 ```

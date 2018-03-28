@@ -1,9 +1,78 @@
 .tiny-notification {
-
+  width: 2rem;
+  height: 2rem;
+  position: relative;
 }
 
 .tiny-notification__btn {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #4285f4;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+
+.ripple {
+  .tiny-notification__btn {
+    svg {
+      transform-origin: 50% 0;
+      animation: sway 400ms 0ms ease;
+    }
+  }
+}
+
+.tiny-notification__container {
+  display: none;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+  z-index: 1001;
+  background: #fff;
+}
+
+.tiny-notification__container-arrow {
+  display: none;
+  position: absolute;
+  top: 2rem;
+  left: 0.7rem;
+  width: 0;
+  height: 0;
+  z-index: 1001;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-bottom: 1rem solid #fff;
+}
+
+.active {
+  .tiny-notification__container-arrow {
+    display: block;
+  }
+  .tiny-notification__container {
+    position: absolute;
+    right: 0;
+    top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 20rem;
+  }
+  .tiny-notification__container.right {
+    right: calc(-20rem + 100%);
+  }
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

@@ -6,7 +6,17 @@ Define notification menu.
 ```js
     render() {
         return (
-            <Notification></Notification>
+            <Notification reverse>
+                <ListItem>
+                   Message 1
+                </ListItem>
+                <ListItem>
+                   Message 2
+                </ListItem>
+                <ListItem>
+                   Message 3
+                </ListItem>
+            </Notification>
         );
     }
 
